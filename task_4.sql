@@ -1,14 +1,14 @@
 SELECT 
-    column_name, 
-    column_type, 
+    COLUMN_NAME, 
+    COLUMN_TYPE, 
     is_nullable, 
     column_key, 
     column_default, 
     extra
 FROM 
-    information_schema.columns
+    INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    table_schema = 'alx_book_store' 
-    AND table_name = 'Books'
+    TABLE_SCHEMA = 'alx_book_store'
+    AND TABLE_NAME = 'Books'
 ORDER BY 
     ordinal_position;
